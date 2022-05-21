@@ -16,6 +16,8 @@ import ModalScreen from '../screens/ModalScreen';
 import NotFoundScreen from '../screens/NotFoundScreen';
 import TabOneScreen from '../screens/TabOneScreen';
 import TabTwoScreen from '../screens/TabTwoScreen';
+import InterestsScreen from '../screens/InterestsScreen';
+import PrevConnectionsScreen from '../screens/PrevConnectionsScreen';
 import { RootStackParamList, RootTabParamList, RootTabScreenProps } from '../types';
 import LinkingConfiguration from './LinkingConfiguration';
 
@@ -43,6 +45,8 @@ function RootNavigator() {
       <Stack.Group screenOptions={{ presentation: 'modal' }}>
         <Stack.Screen name="Modal" component={ModalScreen} />
       </Stack.Group>
+      <Stack.Screen name="Interests" component={InterestsScreen} options={{ title: 'Interests' }} />
+      <Stack.Screen name="Previous Connections" component={PrevConnectionsScreen} options={{ title: 'Previous Connections' }} />
     </Stack.Navigator>
   );
 }
